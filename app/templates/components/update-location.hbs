@@ -1,12 +1,17 @@
 <h3>Edit This Location</h3>
+<p><i>*(You Might Need To Stroll To Update Items)</i></p>
+<div class="edit-location">
 <form {{action 'updateLocation' on='submit'}}>
-{{input placeholder='New Location Name'
-value=this.name}}
-{{!-- {{input placeholder='New Location Longitude'
-value=this.longitude}}
+Location Name: {{input placeholder='New Location Name'
+value=this.name}}<br>
+New Longitude: {{input placeholder='New Location Longitude'
+value=this.longitude}}<br>
+New Latitude:
 {{input placeholder='New Location Latitude'
-value=this.latitude}}
+value=this.latitude}}<br>
+New Location Type:
 {{input placeholder='New Location Type'
-value=this.locationType}} --}}
+value=this.locationType}}<br>
 <button type='submit'class='btn-xs btn-secondary'>Update</button>
 </form>
+</div>
