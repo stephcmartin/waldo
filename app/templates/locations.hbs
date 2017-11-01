@@ -1,5 +1,7 @@
-<h1>Our List Of Doggie Friendly Locations</h1>
+<h1>List of Dog Friendly Locations:</h1>
+<div class="locations">
 {{#each model as |location|}}
 <li>{{#link-to "location" location}}{{location.name}}{{/link-to}}
-  <button {{action 'deleteLocation' location}}>Delete</button></li>
+  <button class='btn-xs btn-secondary'{{action 'deleteLocation' location}}>Delete</button></li>
 {{/each}}
+</div>

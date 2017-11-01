@@ -1,2 +1,47 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+.main{
+  text-align: center;
+  font-family: 'Rozha One', serif;
+}
+h1{
+  font-family: 'Rozha One', serif;
+  font-size: 40px;
+}
+
+body{
+  font-family: 'Roboto Slab', serif;
+}
+
+#footerwrap{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(22, 89, 150);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+  font-size: 13px;
+}
+
+#footerwrap i:hover {
+	color: #1abc9c
+}
+
+li{
+list-style-type: none;
+font-size: 15px;
+}
+
+.locations li{
+  font-size: 20px;
+}
+
+.social{
+  font-size: 25px;
+  text-align: center;
+}
