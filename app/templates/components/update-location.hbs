@@ -1,12 +1,12 @@
 <h5>Edit Location {{model.name}}</h5>
 <form {{action 'updateLocation' on='submit'}}>
 {{input placeholder='New Location Name'
-value=newLocation.name}}
-{{input placeholder='New Location Longitude'
-value=newLocation.longitude}}
+value=this.name}}
+{{!-- {{input placeholder='New Location Longitude'
+value=this.longitude}}
 {{input placeholder='New Location Latitude'
-value=newLocation.latitude}}
+value=this.latitude}}
 {{input placeholder='New Location Type'
-value=newLocation.locationType}}
+value=this.locationType}} --}}
 <button type='submit'>Update</button>
 </form>
