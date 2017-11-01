@@ -1,0 +1,16 @@
+<h3>Create A New Dog Friendly Location:</h3>
+ <form {{action 'createLocation' on='submit'}}>
+{{input
+ placeholder='New Location Name'
+ value=newLocation.name}}
+ {{input
+  placeholder='Longitude'
+  value=newLocation.longitude}}
+  {{input
+   placeholder='Latitude'
+   value=newLocation.latitude}}
+   {{input
+    placeholder='Location Type'
+    value=newLocation.locationType}}
+ <button type=‘submit’>Save</button>
+ </form>
