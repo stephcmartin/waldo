@@ -6,6 +6,7 @@
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "locations"}}Dog Friendly Locations{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -22,7 +23,7 @@
 </nav>
 
 <h1>Bring Waldo.</h1>
-<h3>Go on a new adventure with your canine best friend</h3>
+<p><i>Go on a new adventure with your canine best friend</i></p>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
