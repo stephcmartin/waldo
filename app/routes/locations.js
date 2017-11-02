@@ -6,7 +6,7 @@ export default Ember.Route.extend({
 },
 actions: {
   deleteLocation(location){
-    location.destroyRecord()
+    location.destroyRecord();
   }
 },
 });

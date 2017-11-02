@@ -9,11 +9,11 @@ export default Ember.Component.extend({
   },
   actions: {
     createLocation() {
-      this.sendAction('createLocation', this.get('newLocation'))
+      this.sendAction('createLocation', this.get('newLocation'));
       this.set('newLocation.name', null),
       this.set('newLocation.longitude', null),
       this.set('newLocation.latitude', null),
-      this.set('newLocation.locationType', null)
+      this.set('newLocation.locationType', null);
     }
   }
 });

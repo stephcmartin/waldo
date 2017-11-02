@@ -13,7 +13,7 @@ Router.map(function () {
   this.route('locations');
   this.route('locations-new', {path: 'locations/new'});
   this.route('location', {path: 'locations/:location_id'});
-  this.route('map');
+  this.route('map', {path: 'locations/gov-verified'});
 });
 
 export default Router;
