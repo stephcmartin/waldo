@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('locations');
   this.route('locations-new', {path: 'locations/new'});
   this.route('location', {path: 'locations/:location_id'});
+  this.route('map');
 });
 
 export default Router;
