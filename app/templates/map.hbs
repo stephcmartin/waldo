@@ -42,7 +42,7 @@
         content: 'Sheepfold Dog Park at Middlesex Fells Reservation'})
         addMarker({coords:{lat:42.054030,lng:-70.196275},
         content: 'Pilgrim Bark Park and Provincetown Beaches'})
-        addMarker({coords:{lat:42.240973,lng:--70.913830},
+        addMarker({coords:{lat:42.240973,lng:-70.913830},
         content: 'Bare Cove Park'})
         addMarker({coords:{lat:42.384239,lng:-71.155265},
         content: 'Fresh Pond Dog Park'})
@@ -64,7 +64,7 @@
           }
           // check content
           if(props.content){
-            var infoWindow = new google.maps.InfoWindow({
+            let infoWindow = new google.maps.InfoWindow({
               content:props.content
             });
             marker.addListener('click', function(){
@@ -72,7 +72,7 @@
             });
           }
         }
-     }
+      }
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAApNoltggbZiI7k5jW1d1Znj72D5MfAuk&callback=initMap"
    async defer>
