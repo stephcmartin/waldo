@@ -1,17 +1,18 @@
 
 <h3>Create A New Dog Friendly Location:</h3>
+<p>*Don't know the longitude and latitude? You can find them <a href="https://www.latlong.net/">here</a>.</p>
  <form {{action 'createLocation' on='submit'}}>
-{{input
- placeholder='New Location Name'
+Add Location Name {{input
+ placeholder='Example: General Assembly'
  value=newLocation.name}}
- {{input
-  placeholder='Longitude'
+ Add Longitude {{input
+  placeholder='Example: -71.057057'
   value=newLocation.longitude}}
-  {{input
-   placeholder='Latitude'
+  Add Latitude  {{input
+   placeholder='Example: 42.350274'
    value=newLocation.latitude}}
-   {{input
-    placeholder='Location Type'
+   Location Type{{input
+    placeholder='Example: Park, Co-Working Space, Pub etc.'
     value=newLocation.locationType}}
  <button type='submit' class='btn-xs btn-secondary'>Save</button>
  </form>
