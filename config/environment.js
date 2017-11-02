@@ -2,8 +2,8 @@
 
 module.exports = function (environment) {
   'use strict';
-  const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+  var ENV = {
+    modulePrefix: 'waldo',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -49,7 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/waldo';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://waldo-api.herokuapp.com/'
   }
 
   return ENV;
