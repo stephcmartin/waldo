@@ -28,24 +28,49 @@
 
         // add multiple marker function
 
-        addMarker({lat:42.1405,lng:-71.4217})
-        addMarker({lat:42.3430,lng:-71.0675})
-        addMarker({lat:42.334735,lng:-71.112729})
-        addMarker({lat:42.258668,lng:-72.504951})
-        addMarker({lat:42.345373,lng:-71.078402})
-        addMarker({lat:42.452397,lng:-71.101446})
-        addMarker({lat:42.054030,lng:-70.196275})
-        addMarker({lat:42.452397,lng:-71.101446})
-        addMarker({lat:42.384239,lng:-71.155265})
-        addMarker({lat:42.384239,lng:-71.155265})
-        addMarker({lat:42.110645,lng:-71.185039})
+        addMarker({coords:{lat:42.1405,lng:-71.4217},
+          content:'Medway Dog Park'})
+        addMarker({coords:{lat:42.3430,lng:-71.0675},
+        content: 'Peters Park'})
+        addMarker({coords:{lat:42.334735,lng:-71.112729},
+        content: 'Brookline Green Dog Parks'})
+        addMarker({coords:{lat:42.258668,lng:-72.504951},
+        content: 'Dufresne Park'})
+        addMarker({coords:{lat:42.345373,lng:-71.078402},
+        content:'Carlton Court Dog Park within Southwest Corridor Park'})
+        addMarker({coords:{lat:42.452397,lng:-71.101446},
+        content: 'Sheepfold Dog Park at Middlesex Fells Reservation'})
+        addMarker({coords:{lat:42.054030,lng:-70.196275},
+        content: 'Pilgrim Bark Park and Provincetown Beaches'})
+        addMarker({coords:{lat:42.240973,lng:--70.913830},
+        content: 'Bare Cove Park'})
+        addMarker({coords:{lat:42.384239,lng:-71.155265},
+        content: 'Fresh Pond Dog Park'})
+        addMarker({coords:{lat:42.483550,lng:-71.031525},
+        content: 'Bark Place at Breakheart Reservation'})
+        addMarker({coords:{lat:42.110645,lng:-71.185039},
+        content:'Sharon Dog Park'})
 
-        function addMarker(coords){
+        function addMarker(props){
           let marker = new google.maps.Marker({
-          position:coords,
+          position:props.coords,
           map:map,
           icon:'https://i.imgur.com/H01xfxt.png'
           })
+         // Check For Custom Icon
+          if(props.iconImage){
+            // set icon image
+            marker.setIcon(props.iconImage)
+          }
+          // check content
+          if(props.content){
+            var infoWindow = new google.maps.InfoWindow({
+              content:props.content
+            });
+            marker.addListener('click', function(){
+              infoWindow.open(map, marker);
+            });
+          }
         }
      }
    </script>
