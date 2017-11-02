@@ -2,6 +2,9 @@
 <div class="locations">
 {{#each model as |location|}}
 <li>{{#link-to "location" location}}{{location.name}}{{/link-to}}
-  <button class='btn-xs btn-secondary'{{action 'deleteLocation' location}}>Delete</button></li>
+  {{#if location.editable}}
+  <button class='btn-xs btn-secondary'{{action 'deleteLocation' location}}>Delete</button>
+  {{/if}}
+</li>
 {{/each}}
 </div>
