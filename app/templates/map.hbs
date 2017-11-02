@@ -6,25 +6,47 @@
    function initMap(){
      // map options
      let options = {
-       zoom:9,
+       zoom:8,
        center:{lat:42.3601, lng:-71.0589}
      }
      // new map that is zoomed in on boston
      let map = new google.maps.Map(document.getElementById('map'), options)
-     // Add marker
-let marker = new google.maps.Marker({
-position:{lat:42.1405,lng:-71.4217},
-map:map,
-icon:'https://i.imgur.com/H01xfxt.png'
-})
+     // Add Single marker for Medway Dog Park
+        // let marker = new google.maps.Marker({
+        // position:{lat:42.1405,lng:-71.4217},
+        // map:map,
+        // icon:'https://i.imgur.com/H01xfxt.png'
+        // })
+        //
+        // // info
+        // var infoWindow = new google.maps.InfoWindow({
+        //   content: 'Medway Dog Park'
+        // });
+        // marker.addListener('click', function(){
+        //   infoWindow.open(map, marker);
+        // });
 
-// info
-var infoWindow = new google.maps.InfoWindow({
-  content: 'Medway Dog Park'
-});
-marker.addListener('click', function(){
-  infoWindow.open(map, marker);
-});
+        // add multiple marker function
+
+        addMarker({lat:42.1405,lng:-71.4217})
+        addMarker({lat:42.3430,lng:-71.0675})
+        addMarker({lat:42.334735,lng:-71.112729})
+        addMarker({lat:42.258668,lng:-72.504951})
+        addMarker({lat:42.345373,lng:-71.078402})
+        addMarker({lat:42.452397,lng:-71.101446})
+        addMarker({lat:42.054030,lng:-70.196275})
+        addMarker({lat:42.452397,lng:-71.101446})
+        addMarker({lat:42.384239,lng:-71.155265})
+        addMarker({lat:42.384239,lng:-71.155265})
+        addMarker({lat:42.110645,lng:-71.185039})
+
+        function addMarker(coords){
+          let marker = new google.maps.Marker({
+          position:coords,
+          map:map,
+          icon:'https://i.imgur.com/H01xfxt.png'
+          })
+        }
      }
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAApNoltggbZiI7k5jW1d1Znj72D5MfAuk&callback=initMap"
