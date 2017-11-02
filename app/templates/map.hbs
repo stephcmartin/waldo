@@ -14,8 +14,17 @@
      // Add marker
 let marker = new google.maps.Marker({
 position:{lat:42.1405,lng:-71.4217},
-map:map
+map:map,
+icon:'https://i.imgur.com/H01xfxt.png'
 })
+
+// info
+var infoWindow = new google.maps.InfoWindow({
+  content: 'Medway Dog Park'
+});
+marker.addListener('click', function(){
+  infoWindow.open(map, marker);
+});
      }
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAApNoltggbZiI7k5jW1d1Znj72D5MfAuk&callback=initMap"
