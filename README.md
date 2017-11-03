@@ -12,7 +12,7 @@ The web app uses user-input to compile a database of dog-friendly locations and 
 
 ## View Deployed Site:
 
-<a href="http://stephcmartin.github.io/waldo"> You can view Bring-Waldo here</a>
+<a href="http://stephcmartin.github.io/waldo">You can view Bring-Waldo here</a>
 
 ### My Entity Relationship Diagram and User Story:
 
