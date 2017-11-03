@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  name: null,
-  longitude: null,
-  latitude: null,
-  locationType: null,
+  name: Ember.computed.oneWay('location.name'),
+  longitude: Ember.computed.oneWay('location.longitude'),
+  latitude: Ember.computed.oneWay('location.latitude'),
+  locationType: Ember.computed.oneWay('location.locationType'),
 actions:{
   updateLocation(){
     const location_id = this.get('location.id');
@@ -20,10 +20,10 @@ actions:{
         locationType: newType
     };
     this.sendAction('updateLocation', location);
-    this.set('name', null);
-    this.set('longitude', null);
-    this.set('latitude', null);
-    this.set('locationType', null);
+    // this.set('name', null);
+    // this.set('longitude', null);
+    // this.set('latitude', null);
+    // this.set('locationType', null);
   },
 }
 });
