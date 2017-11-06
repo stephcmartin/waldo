@@ -6,7 +6,12 @@ export default Ember.Route.extend({
 },
 actions: {
   deleteLocation(location){
-    location.destroyRecord();
+    location.destroyRecord()
+    .then(() => this.get('flashMessages').success('Succesfully deleted location.'))
+    .catch(() => {
+      this.get('flashMessages')
+      .danger('There was a problem. Please try again.');
+    })
   }
 },
 });
