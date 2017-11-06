@@ -14,12 +14,15 @@ body{
   font-family: 'Roboto Slab', serif;
 }
 
+h2{
+  font-family: 'Delius Unicase', cursive;
+}
+
 #footerwrap{
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: rgb(22, 89, 150);
   position: fixed;
-  font-family: 'Roboto Slab', serif;
   bottom: 0;
   width: 100%;
 }
@@ -30,11 +33,13 @@ body{
 }
 
 #footerwrap i:hover {
-	color: #1abc9c
+	color: #1abc9c;
+  font-size: 30px;
 }
 
 #footerwrap a:hover {
-	color: #1abc9c
+	color: #1abc9c;
+  font-size: 30px;
 }
 
 body a:hover {
@@ -64,6 +69,7 @@ font-size: 15px;
 #map{
   height: 340px;
   width: 550px;
+  margin: auto;
 }
 #back{
   color: red;
@@ -77,7 +83,7 @@ font-size: 15px;
 #navvy{
   background-color: rgba(123, 178, 218, 0.5);
   font-size: 15px;
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 #navvy a:hover {
@@ -86,4 +92,17 @@ font-size: 15px;
 
 #navvy a{
 color: rgb(22, 89, 150);
+}
+
+.mapper{
+  text-align: center;
+}
+
+.list{
+    overflow: scroll;
+    height: 400px;
+}
+
+.list h3{
+  font-weight: bold;
 }

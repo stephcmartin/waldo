@@ -1,6 +1,7 @@
-<h1>List of Dog Friendly Locations:</h1>
-<li>{{#link-to "map"}}List Of Massachusetts Government Verified Dog-Parks{{/link-to}}</li><br>
 <div class="locations">
+  <div class="col-md-8 list">
+    <h3>User Generated <br>
+      List of Dog Friendly Locations:</h3>
 {{#each model as |location|}}
 <li>{{#link-to "location" location}}{{location.name}}{{/link-to}}
   {{#if location.editable}}
@@ -8,4 +9,9 @@
   {{/if}}
 </li>
 {{/each}}
+</div>
+<div class="col-md-4 list">
+<h3>Massachusetts Government Verified Dog-Parks:</h3>
+<li>{{#link-to "map"}}View Verified List Here{{/link-to}}</li><br>
+</div>
 </div>
