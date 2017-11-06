@@ -52,4 +52,6 @@ https://github.com/stephcmartin/waldo-api
 - Bootstrap
 
 ### List of Usolved Problems Which Would Be Fixed In Future Iterations:
--
+I really would like to incorporate google maps into Bring-Waldo.
+- I want users to be able to click into the location (e.g Medway Dog Park) and be able to see the location on Google Maps.
+- I would also like a collected list of all user generate locations to be diplayed onto one Google Map.
