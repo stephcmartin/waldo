@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid" id="navvy">
     {{navbar-header}}
 
     <div class="collapse navbar-collapse" id="navigation">
@@ -7,7 +7,7 @@
         <li>{{#link-to "about-us"}}About Us{{/link-to}}</li>
         {{#if isAuthenticated}}
         {{!-- <li>{{#link-to "users"}}Users{{/link-to}}</li> --}}
-        <li>{{#link-to "locations"}}Dog Friendly Locations{{/link-to}}</li>
+        <li>{{#link-to "locations"}}Dog Friendly Locations 🐶{{/link-to}}</li>
         <li>{{#link-to "locations-new"}}Add New Location{{/link-to}}</li>
         {{/if}}
       </ul>

@@ -19,6 +19,7 @@ body{
   padding-bottom: 30px;
   background-color: rgb(22, 89, 150);
   position: fixed;
+  font-family: 'Roboto Slab', serif;
   bottom: 0;
   width: 100%;
 }
@@ -30,6 +31,14 @@ body{
 
 #footerwrap i:hover {
 	color: #1abc9c
+}
+
+#footerwrap a:hover {
+	color: #1abc9c
+}
+
+body a:hover {
+	color: #1abc9c;
 }
 
 li{
@@ -63,4 +72,18 @@ font-size: 15px;
 #back-map{
   color: red;
   float: right;
+}
+
+#navvy{
+  background-color: rgba(123, 178, 218, 0.5);
+  font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navvy a:hover {
+	color: white;
+}
+
+#navvy a{
+color: rgb(22, 89, 150);
 }
