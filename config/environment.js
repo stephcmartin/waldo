@@ -34,7 +34,7 @@ module.exports = function (environment) {
 };
 
 ENV.googleMap = {
-    apiKey: 'AIzaSyBmhkvqUyC7cEa97b6seIWtCuSPl4FWJV0',
+    apiKey: 'AIzaSyB8uUjIPY7cj8fIvrq5TS5ivYAVUfOtwVc',
     libraries: ['drawing', 'visualization']
 };
 
