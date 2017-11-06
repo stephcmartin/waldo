@@ -15,6 +15,7 @@ Router.map(function () {
   this.route('location', {path: 'locations/:location_id'});
   this.route('map', {path: 'locations/gov-verified'});
   this.route('google-search', {path: 'location/search'});
+  this.route('about-us');
 });
 
 export default Router;
