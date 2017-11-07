@@ -15,7 +15,7 @@ module.exports = function (environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false,
-      },
+      }
     },
 
     APP: {
@@ -23,6 +23,19 @@ module.exports = function (environment) {
       // when it is created
     },
   };
+
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+    'font-src': "'self' fonts.gstatic.com",
+    'connect-src': "'self' maps.gstatic.com",
+    'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
+    'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+  }
+
+  ENV.googleMap = {
+    apiKey: 'AIzaSyDJiGRPRtIzJUfWoFwUfeKuzPkD0sew09U'
+  }
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
