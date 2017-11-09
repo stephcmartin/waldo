@@ -10,9 +10,19 @@ Bring Waldo. came about with my frustrations as well as conversations with other
 
 The web app uses user-input to compile a database of dog-friendly locations and categorize them – bars, coffee, parks and doggie stores – for other dog parents. User-input allows for unofficial and occasional dog-friendly zones as well as the officially designated places to be known and available.
 
+## Screenshots Of The App:
+
+<img src="Screenshots/2.png">
+<img src="Screenshots/1.png">
+<img src="Screenshots/3.png">
+
 ## View Deployed Site:
 
 <a href="http://stephcmartin.github.io/waldo">You can view Bring-Waldo here</a>
+
+## API URL:
+
+<a herf="https://waldo-api.herokuapp.com/">My Heokuapp Site</a>
 
 ### My Entity Relationship Diagram and User Story:
 
