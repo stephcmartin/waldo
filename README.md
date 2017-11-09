@@ -22,7 +22,7 @@ The web app uses user-input to compile a database of dog-friendly locations and 
 
 ## API URL:
 
-<a herf="https://waldo-api.herokuapp.com/">My API URL</a>
+<a href="https://waldo-api.herokuapp.com/">My API URL</a>
 
 ### My Entity Relationship Diagram and User Story:
 
